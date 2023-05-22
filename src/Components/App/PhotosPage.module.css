@@ -1,0 +1,43 @@
+.photosContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.photosContainer .ph {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.photosContainer .imageWrapper {
+  background-color: black;
+  height: 240px;
+}
+
+.photosContainer .imageWrapper img {
+  width: 370px;
+  height: 240px;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+}
+
+.w {
+  color: red;
+  margin-top: -250px;
+  width: 290px;
+  height: 180px;
+  transition: all 0.3s linear;
+}
+
+.photosContainer img:hover,
+.photosContainer .ph:hover img {
+  transform: translate(-30px, -30px);
+}
+
+.photosContainer .ph:hover .w {
+  transform: translate(-30px, -30px);
+}
